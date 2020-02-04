@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/nav_about"
+        app:startDestination="@id/aboutFragment"
+        >
+
+    <fragment android:id="@+id/aboutFragment"
+            android:name="com.ashishkharche.kishornikamphotography.ui.main.about.AboutFragment"
+            android:label="@string/fragment_about"
+            tools:layout="@layout/fragment_about">
+
+
+        <action android:id="@+id/action_aboutFragment_to_viewAboutFragment"
+                app:destination="@id/viewAboutFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                />
+
+    </fragment>
+
+    <fragment android:id="@+id/viewAboutFragment"
+            android:name="com.ashishkharche.kishornikamphotography.ui.main.about.ViewAboutFragment"
+            android:label="@string/fragment_view_about"
+            tools:layout="@layout/fragment_view_about">
+
+
+        <action android:id="@+id/action_viewAboutFragment_to_updateAboutFragment"
+                app:destination="@id/updateAboutFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                />
+
+        <action
+                android:id="@+id/action_viewAboutFragment_to_home"
+                app:destination="@id/aboutFragment"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popUpTo="@+id/nav_about"
+                app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment android:id="@+id/updateAboutFragment"
+            android:name="com.ashishkharche.kishornikamphotography.ui.main.about.UpdateAboutFragment"
+            android:label="@string/fragment_update_about"
+            tools:layout="@layout/fragment_update_about">
+
+        <action
+                android:id="@+id/action_updateAboutFragment_to_home"
+                app:destination="@id/aboutFragment"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popUpTo="@+id/nav_about"
+                app:popUpToInclusive="true" />
+
+    </fragment>
+</navigation>

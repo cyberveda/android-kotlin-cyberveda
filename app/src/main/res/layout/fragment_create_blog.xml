@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ui.auth.LauncherFragment"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_drawable"
+
+            >
+
+        <View
+                android:layout_width="0.5dp"
+                android:layout_height="0.5dp"
+                android:focusableInTouchMode="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/focusable_view"></View>
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:id="@+id/app_logo"
+                android:src="@drawable/logo"
+                android:layout_marginTop="60dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/forgot_password"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintVertical_bias=".4" />
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/app_logo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="18sp"
+                android:lineHeight="38dp"
+                android:paddingLeft="30dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/courgette"
+                android:paddingRight="30dp"
+                android:textColor="#000000"
+                android:text="KISHOR NIKAM is an acclaimed professional cinematographer and a passionate photographer based at the historical city Aurangabad in the state of Maharashtra state in India whose work has been appreciated by millions of the connoisseurs all over India and abroad.\n\nHe has Master’s degree in Fine Art (Photography) and Journalism\n\nHe is having hands on professional experience of more than two decades in all types of photography.\n\nHe has participated many national and international exhibitions including Jahangir Art Gallery Mumbai and at Singapore.\n\nHis cinematographic skills in the national award winning movie “Not Only Mrs.Raut” and “Dashakriya” were admired by the global film fraternity.\n\nHis expertise in Industrial Photography, Fashion Photography, Portraits, Branding and Areal Photography and coffee table books. is undisputed\n\nINDUSTRIAL PHOTOGRAPHY\nHelps industries in effectively showcasing their expertise in industrial processes, sophistication in contemporary machinery, and proficiency in manufacturing techniques.\n\nTABLETOP PHOTOGRAPHY\nA genre of commercial product/still life photography vitalfor products like food and drinks, gadgets, cosmetics, etc.\n\nARCHITECTURAL PHOTOGRAPHY\nPhotography of aesthetically pleasing buildings and other similar structures for accurate representation of the subjects.\n\nADVERTISING PHOTOGRAPHY\nPhotography for branding ,editorial content in magazines, books calendars, advertisements, websites and other forms of media.\n\nAERIAL PHOTOGRAPHY\nPhotography for archaeology, movie production, environmental studies, power line inspection, surveillance, commercial advertising, etc.\n\n360-degree PHOTOGRAPHY PANAROMA\nEffective for showing off panoramas, internal architecture and more in a dramatic fashion that replicates the experience of being there.\n\nPORTRAIT PHOTOGRAPHY\nA photograph of a person or group of person that captures a personality of a person or subject with effective use of lights, backdrops and poses.\n\nFASHION PHOTOGRAPHY\nA genre devoted for displaying clothing and other fashion items for the advertisements and fashion magazines."
+                android:id="@+id/forgot_password"
+                android:layout_marginBottom="70dp"
+                android:layout_marginTop="30dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

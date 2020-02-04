@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.auth.LauncherFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chromeYellow"
+
+            >
+
+        <View
+                android:id="@+id/focusable_view"
+                android:layout_width="0.5dp"
+                android:layout_height="0.5dp"
+                android:focusableInTouchMode="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></View>
+
+        <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/forgot_password"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias=".4"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <!--        <Button-->
+        <!--                android:id="@+id/login"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:text="Enter App"-->
+        <!--                android:textColor="#000"-->
+        <!--                android:textSize="25sp"-->
+        <!--                android:background="@drawable/background_drawable"-->
+        <!--                />-->
+
+        <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:layout_marginRight="15dp"
+
+                android:background="@color/chromeYellow"
+                android:paddingStart="60dp"
+                android:paddingEnd="60dp"
+                android:text="Enter"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/forgot_password"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+
+        <!--    <TextView-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/login"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        app:layout_constraintRight_toRightOf="parent"-->
+        <!--        app:layout_constraintBottom_toTopOf="@+id/blog_from_launcher"-->
+        <!--        android:textSize="25sp"-->
+        <!--        android:textColor="#000"-->
+        <!--        android:text="Register"-->
+        <!--        android:id="@+id/register"-->
+        <!--        android:layout_marginTop="30dp" />-->
+
+
+        <!--    <TextView-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/login"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        app:layout_constraintRight_toRightOf="parent"-->
+        <!--        app:layout_constraintBottom_toTopOf="@+id/forgot_password"-->
+        <!--        android:textSize="25sp"-->
+        <!--        android:textColor="#000"-->
+        <!--        android:text="Blog from launcher"-->
+        <!--        android:id="@+id/blog_from_launcher"-->
+        <!--        android:layout_marginTop="30dp" />-->
+
+
+        <!--        <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/app_logo"-->
+        <!--                app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--                app:layout_constraintRight_toRightOf="parent"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                android:textSize="18sp"-->
+        <!--                android:lineHeight="38dp"-->
+        <!--                android:paddingLeft="30dp"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:fontFamily="@font/courgette"-->
+        <!--                android:paddingRight="30dp"-->
+        <!--                android:textColor="#000000"-->
+        <!--                android:text="KISHOR NIKAM  is an acclaimed professional photographer and a passionate cinematographer based at the historical city  Aurangabad in the state of Maharashtra state in India whose work has been appreciated by millions of the connoisseurs all over India and abroad."-->
+        <!--                android:id="@+id/forgot_password"-->
+        <!--                android:layout_marginTop="30dp" />-->
+
+        <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="40dp"
+                android:lineHeight="38dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/Multiline_Text_By_N"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
